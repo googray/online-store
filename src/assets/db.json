@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=9029616&m=0&n=0&lng=en&ccf=94077829",
+    "title": "CASTROL EDGE",
+    "types": [0, 1, 2],
+    "sizes": [1, 4, 5],
+    "price": 35,
+    "category": 2,
+    "rating": 0
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=16411266&m=0&n=0&lng=en&ccf=94077829",
+    "title": "MANNOL LEGEND",
+    "types": [2],
+    "sizes": [1, 5],
+    "price": 27,
+    "category": 1,
+    "rating": 1
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=17355870&m=0&n=0&lng=en&ccf=94077829",
+    "title": "BIZOL ALLROUND",
+    "types": [1, 2],
+    "sizes": [1, 5],
+    "price": 38,
+    "category": 1,
+    "rating": 2
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=8811552&m=0&n=0&lng=en&ccf=94077829",
+    "title": "MOTUL SPECIFIC",
+    "types": [1, 2],
+    "sizes": [1, 4, 5],
+    "price": 24,
+    "category": 1,
+    "rating": 1
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=16411268&m=0&n=0&lng=en&ccf=94077829",
+    "title": "MANNOL LEGEND, EXTRA",
+    "types": [1, 2],
+    "sizes": [1, 5],
+    "price": 29,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://media.autodoc.de/360_photos/12754598/h-preview.jpg",
+    "title": "SHELL HELIX, Ultra",
+    "types": [1, 2],
+    "sizes": [1, 5],
+    "price": 54,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=15769764&m=0&n=0&lng=en&ccf=94077829",
+    "title": "PEMCO iDRIVE 300",
+    "types": [1, 2],
+    "sizes": [1, 4],
+    "price": 23,
+    "category": 3,
+    "rating": 6
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=15769148&m=0&n=0&lng=en&ccf=94077829",
+    "title": "FANFARO EXPERT Line",
+    "types": [1, 2],
+    "sizes": [1, 4],
+    "price": 28,
+    "category": 3,
+    "rating": 5
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=7889362&m=0&n=0&lng=en&ccf=94077829",
+    "title": "LIQUI MOLY Special Tec",
+    "types": [1, 2],
+    "sizes": [1, 4, 5],
+    "price": 72,
+    "category": 3,
+    "rating": 3
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=9044471&m=0&n=0&lng=en&ccf=94077829",
+    "title": "CASTROL MAGNATEC, Start",
+    "types": [1, 2],
+    "sizes": [1, 4],
+    "price": 57,
+    "category": 4,
+    "rating": 3
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=13546157&m=0&n=0&lng=en&ccf=94077829",
+    "title": "MANNOL O.E.M.",
+    "types": [1, 2],
+    "sizes": [1, 4],
+    "price": 25,
+    "category": 4,
+    "rating": 4
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=12744111&m=0&n=0&lng=en&ccf=94077829",
+    "title": "ELF EVOLUTION, MSX",
+    "types": [1, 2],
+    "sizes": [1, 5],
+    "price": 45,
+    "category": 4,
+    "rating": 6
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=12744135&m=0&n=0&lng=en&ccf=94077829",
+    "title": "TOTAL QUARTZ, Energy",
+    "types": [2],
+    "sizes": [1, 5],
+    "price": 32,
+    "category": 5,
+    "rating": 5
+  },
+  {
+    "id": 13,
+    "imageUrl": "https://media.autodoc.de/360_photos/12744105/h-preview.jpg",
+    "title": "ELF Evolution, 900 SXR",
+    "types": [1, 2],
+    "sizes": [1, 5],
+    "price": 37,
+    "category": 5,
+    "rating": 7
+  },
+  {
+    "id": 14,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=1888877&m=0&n=0&lng=en&ccf=94077829",
+    "title": "FEBI BILSTEIN 32938",
+    "types": [1, 2],
+    "sizes": [5],
+    "price": 32,
+    "category": 5,
+    "rating": 1
+  },
+  {
+    "id": 15,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=12758770&m=0&n=0&lng=en&ccf=94077829",
+    "title": "ORLEN PLATINUM CLASSIC",
+    "types": [0, 1],
+    "sizes": [1, 4],
+    "price": 30,
+    "category": 6,
+    "rating": 6
+  },
+  {
+    "id": 16,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=13625527&m=0&n=0&lng=en&ccf=94077829",
+    "title": "VALVOLINE MAXLIFE",
+    "types": [0, 1],
+    "sizes": [1, 5],
+    "price": 33,
+    "category": 6,
+    "rating": 8
+  },
+  {
+    "id": 17,
+    "imageUrl": "https://cdn.autodoc.de/thumb?id=7933812&m=0&n=0&lng=en&ccf=94077829",
+    "title": "LIQUI MOLY LEICHTLAUF",
+    "types": [0, 1],
+    "sizes": [1, 4, 5],
+    "price": 50,
+    "category": 6,
+    "rating": 9
+  }
+]
