@@ -13,11 +13,8 @@ import Cart from './pages/Cart';
 // import db from './assets/db.json';
 
 function App() {
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState<string>('');
   const [goodsCount, setGoodsCount] = useState(0);
-
-  console.log('input', searchValue);
-  console.log('count', goodsCount);
 
   return (
     <>

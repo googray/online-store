@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-function Cart({ goodsCount }) {
+const Cart: any = (goodsCount: number) => {
   return (
     <div className="container container-cart">
-      <div class="cart">
-        <div class="cart__top">
-          <h2 class="content__title">
+      <div className="cart">
+        <div className="cart__top">
+          <h2 className="content__title">
             <svg
               width="18"
               height="18"
@@ -37,7 +37,7 @@ function Cart({ goodsCount }) {
             </svg>
             Shoping cart
           </h2>
-          <div class="cart__clear">
+          <div className="cart__clear">
             <svg
               width="20"
               height="20"
@@ -152,8 +152,8 @@ function Cart({ goodsCount }) {
             </div>
           </div>          
         </div> */}
-        <div class="cart__bottom">
-          <div class="cart__bottom-details">
+        <div className="cart__bottom">
+          <div className="cart__bottom-details">
             <span>
               {' '}
               All goods: <b>{goodsCount} pcs.</b>{' '}
@@ -163,8 +163,11 @@ function Cart({ goodsCount }) {
               Total: <b>0 euro</b>{' '}
             </span>
           </div>
-          <div class="cart__bottom-buttons">
-            <Link to="/" class="button button--outline button--add go-back-btn">
+          <div className="cart__bottom-buttons">
+            <Link
+              to="/"
+              className="button button--outline button--add go-back-btn"
+            >
               <svg
                 width="8"
                 height="14"
@@ -183,7 +186,7 @@ function Cart({ goodsCount }) {
 
               <span>Return</span>
             </Link>
-            <div class="button pay-btn">
+            <div className="button pay-btn">
               <span>Pay now</span>
             </div>
           </div>
@@ -191,6 +194,6 @@ function Cart({ goodsCount }) {
       </div>
     </div>
   );
-}
+};
 
 export default Cart;
