@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
-function Cart() {
+type CartProps = {
+  goodsCount: number;
+};
+
+const Cart: React.FC<CartProps> = ({ goodsCount }) => {
   return (
     <div className="container container-cart">
       <div className="cart">
@@ -156,7 +160,7 @@ function Cart() {
           <div className="cart__bottom-details">
             <span>
               {' '}
-              All goods: <b>0 pcs.</b>{' '}
+              All goods: <b>{goodsCount} pcs.</b>{' '}
             </span>
             <span>
               {' '}
@@ -194,6 +198,6 @@ function Cart() {
       </div>
     </div>
   );
-}
+};
 
 export default Cart;

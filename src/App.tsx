@@ -37,7 +37,7 @@ function App() {
                 />
               }
             />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart goodsCount={goodsCount} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
