@@ -3,7 +3,17 @@ import logoGoods from '../assets/img/icon-oil.ico';
 import Search from './SearchMod';
 // import GoodsBlock from './GoodsBlock';
 
-function Header({ searchValue, setSearchValue, goodsCount }) {
+type HeaderProps = {
+  searchValue: string;
+  setSearchValue: Function;
+  goodsCount: number;
+};
+
+const Header: React.FC<HeaderProps> = ({
+  searchValue,
+  setSearchValue,
+  goodsCount,
+}) => {
   return (
     <div className="header">
       <div className="container">
@@ -45,7 +55,7 @@ function Header({ searchValue, setSearchValue, goodsCount }) {
               <path
                 d="M4.78002 4.99999H16.3334L15.2134 10.5933C15.1524 10.9003 14.9854 11.176 14.7417 11.3722C14.4979 11.5684 14.1929 11.6727 13.88 11.6667H6.83335C6.50781 11.6694 6.1925 11.553 5.94689 11.3393C5.70128 11.1256 5.54233 10.8295 5.50002 10.5067L4.48669 2.82666C4.44466 2.50615 4.28764 2.21182 4.04482 1.99844C3.80201 1.78505 3.48994 1.66715 3.16669 1.66666H1.66669"
                 stroke="white"
-                strokeW="1.8"
+                strokeWidth="1.8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -56,6 +66,6 @@ function Header({ searchValue, setSearchValue, goodsCount }) {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

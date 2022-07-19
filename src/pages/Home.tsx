@@ -6,8 +6,28 @@ import GoodsBlock from '../components/GoodsBlock';
 import NotFound from './NotFound';
 import RangeSlider from '../components/RangeSlider';
 
-function Home({ searchValue, goodsCount, setGoodsCount }) {
-  const [goods, setGoods] = useState([]);
+type HomeProps = {
+  searchValue: string;
+  goodsCount: number;
+  setGoodsCount: Function;
+};
+
+const Home: React.FC<HomeProps> = ({
+  searchValue,
+  goodsCount,
+  setGoodsCount,
+}) => {
+  const [goods, setGoods] = useState<
+    {
+      id: number;
+      title: string;
+      price: number;
+      imageUrl: string;
+      sizes: number[];
+      types: number[];
+      addedCount: number;
+    }[]
+  >([]);
 
   const [categoryId, setCategoryId] = useState(0);
   const [sortType, setSortType] = useState({
@@ -29,12 +49,6 @@ function Home({ searchValue, goodsCount, setGoodsCount }) {
   // const [filter, setFilter] = useState(getDataStorage);
   // const getDataStorage = () => localStorage.getItem('filter') || [];
 
-  // const onChangeSearchInput = (evn) => {
-  //   setSearchValue(evn.target.value);
-  //   renderingGoods();
-  //   console.log(evn.target.value);
-  // };
-
   const goodsRender = goods
     .filter((item) => {
       if (item.title.toLowerCase().includes(searchValue.toLowerCase())) {
@@ -52,16 +66,14 @@ function Home({ searchValue, goodsCount, setGoodsCount }) {
       />
     ));
 
-  // console.log('goods', goodsRender);
-
   return (
     <div className="container">
       <div className="content__top">
         <Categories
           value={categoryId}
-          onChangeCategory={(i) => setCategoryId(i)}
+          onChangeCategory={(i: number) => setCategoryId(i)}
         />
-        <Sort value={sortType} onChangeType={(i) => setSortType(i)} />
+        <Sort value={sortType} onChangeType={(i: any) => setSortType(i)} />
       </div>
       <div className="content__search">
         <h2 className="content__title">All goods</h2>
@@ -72,6 +84,6 @@ function Home({ searchValue, goodsCount, setGoodsCount }) {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

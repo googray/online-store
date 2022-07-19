@@ -1,4 +1,4 @@
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer>
       <div className="footer-year">
@@ -13,6 +13,6 @@ function Footer() {
       </a>
     </footer>
   );
-}
+};
 
 export default Footer;
