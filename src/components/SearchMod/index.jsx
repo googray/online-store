@@ -1,18 +1,8 @@
 import styles from './SearchMod.module.scss';
 
-type SearchProps = {
-  searchValue: string;
-  setSearchValue: Function;
-};
-
-const Search: React.FC<SearchProps> = ({ searchValue, setSearchValue }) => {
-  const onChangeSearchInput: React.FormEventHandler<HTMLInputElement> = (
-    event: React.FormEvent<HTMLInputElement>
-  ) => {
-    if (event.target === null) {
-      throw new Error('err');
-    }
-    setSearchValue((event.target as HTMLInputElement).value);
+function Search({ searchValue, setSearchValue }) {
+  const onChangeSearchInput = (evn) => {
+    setSearchValue(evn.target.value);
   };
 
   return (
@@ -42,6 +32,6 @@ const Search: React.FC<SearchProps> = ({ searchValue, setSearchValue }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Search;

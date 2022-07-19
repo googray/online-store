@@ -1,28 +1,17 @@
 import { useState } from 'react';
 
-function Sort({
-  value,
-  onChangeType,
-}: {
-  value: any;
-  onChangeType: any;
-}): JSX.Element {
+function Sort({ value, onChangeType }) {
   const [openSort, setOpenSort] = useState(false);
   // const [selectSort, setSelectSort] = useState(0);
-  const selectedItems: SortItem[] = [
+  const selectedItems = [
     { name: 'best seller', sortProperty: 'rating' },
     { name: 'cost', sortProperty: 'price' },
     { name: 'brand', sortProperty: 'title' },
   ];
   // const selectPopItem = selectedItems[value].name;
 
-  type SortItem = {
-    name: string;
-    sortProperty: string;
-  };
-
-  const onClickPopItem = (obj: SortItem) => {
-    onChangeType(obj);
+  const onClickPopItem = (i) => {
+    onChangeType(i);
     setOpenSort(false);
   };
 
@@ -50,9 +39,7 @@ function Sort({
             {selectedItems.map((obj, i) => (
               <li
                 key={i}
-                className={
-                  value.sortProperty === obj.sortProperty ? 'active' : ''
-                }
+                className={value.sortProperty === obj.Sort ? 'active' : ''}
                 onClick={() => onClickPopItem(obj)}
               >
                 {obj.name}

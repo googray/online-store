@@ -1,11 +1,6 @@
 // import { useState } from 'react';
 
-type CategoryProps = {
-  value: number;
-  onChangeCategory: Function;
-};
-
-const Categories: React.FC<CategoryProps> = ({ value, onChangeCategory }) => {
+function Categories({ value, onChangeCategory }) {
   // const [activeIndex, setActiveIndex] = useState(0);
 
   const categories = [
@@ -37,6 +32,6 @@ const Categories: React.FC<CategoryProps> = ({ value, onChangeCategory }) => {
       </ul>
     </div>
   );
-};
+}
 
 export default Categories;

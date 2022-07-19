@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const Cart: any = (goodsCount: number) => {
+function Cart({ goodsCount }) {
   return (
     <div className="container container-cart">
-      <div className="cart">
-        <div className="cart__top">
-          <h2 className="content__title">
+      <div class="cart">
+        <div class="cart__top">
+          <h2 class="content__title">
             <svg
               width="18"
               height="18"
@@ -37,7 +37,7 @@ const Cart: any = (goodsCount: number) => {
             </svg>
             Shoping cart
           </h2>
-          <div className="cart__clear">
+          <div class="cart__clear">
             <svg
               width="20"
               height="20"
@@ -152,8 +152,8 @@ const Cart: any = (goodsCount: number) => {
             </div>
           </div>          
         </div> */}
-        <div className="cart__bottom">
-          <div className="cart__bottom-details">
+        <div class="cart__bottom">
+          <div class="cart__bottom-details">
             <span>
               {' '}
               All goods: <b>{goodsCount} pcs.</b>{' '}
@@ -163,11 +163,8 @@ const Cart: any = (goodsCount: number) => {
               Total: <b>0 euro</b>{' '}
             </span>
           </div>
-          <div className="cart__bottom-buttons">
-            <Link
-              to="/"
-              className="button button--outline button--add go-back-btn"
-            >
+          <div class="cart__bottom-buttons">
+            <Link to="/" class="button button--outline button--add go-back-btn">
               <svg
                 width="8"
                 height="14"
@@ -186,7 +183,7 @@ const Cart: any = (goodsCount: number) => {
 
               <span>Return</span>
             </Link>
-            <div className="button pay-btn">
+            <div class="button pay-btn">
               <span>Pay now</span>
             </div>
           </div>
@@ -194,6 +191,6 @@ const Cart: any = (goodsCount: number) => {
       </div>
     </div>
   );
-};
+}
 
 export default Cart;

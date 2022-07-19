@@ -2,15 +2,15 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
-function valuetext(value: number) {
+function valuetext(value) {
   return `${value}qty`;
 }
 
 export default function RangeSlider() {
-  const [value, setValue] = React.useState<number[]>([0, 50]);
+  const [value, setValue] = React.useState([0, 50]);
 
-  const handleChange = (event: Event, newValue: number | number[]) => {
-    setValue(newValue as number[]);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
