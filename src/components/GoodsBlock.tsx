@@ -29,9 +29,10 @@ const GoodsBlock: React.FC<GoodsItemProps> = ({
 
   const onClickHandler = () => {
     setGoodsCount(
-      goodsCount < 20
-        ? goodsCount + 1
-        : alert(`Sorry, maximum 20 items in the cart`)
+      // if(goodsCount < 20) { goodsCount + 1 }
+      // else {
+      //   alert(`Sorry, maximum 20 items in the cart`)
+      goodsCount + 1
     );
   };
 
