@@ -28,7 +28,11 @@ const GoodsBlock: React.FC<GoodsItemProps> = ({
   const typeNames = ['Mineral', 'SemiSynthetic', 'Synthetic'];
 
   const onClickHandler = () => {
-    setGoodsCount(goodsCount + 1);
+    setGoodsCount(
+      goodsCount < 20
+        ? goodsCount + 1
+        : alert(`Sorry, maximum 20 items in the cart`)
+    );
   };
 
   return (
