@@ -46,8 +46,34 @@ const Home: React.FC<HomeProps> = ({
     window.scrollTo(0, 0);
   }, [categoryId, sortType]);
 
-  // const [filter, setFilter] = useState(getDataStorage);
-  // const getDataStorage = () => localStorage.getItem('filter') || [];
+  // const [goodsRender, setGoodsRender] = useState< {
+  //   id: number;
+  //   title: string;
+  //   price: number;
+  //   imageUrl: string;
+  //   sizes: number[];
+  //   types: number[];
+  //   addedCount: number;
+  // }[]>(goods)
+
+  // const onChangeGoods = () => {
+  //   setGoodsRender(goods
+  //       .filter((item) => {
+  //         if (item.title.toLowerCase().includes(searchValue.toLowerCase())) {
+  //           return true;
+  //         }
+  //         return false;
+  //       })
+  //       .map((obj) => (
+  //         <GoodsBlock
+  //           goodsCount={goodsCount}
+  //           setGoodsCount={setGoodsCount}
+  //           key={obj.id}
+  //           // addedCount={goods[obj.id] && goods[obj.id].length}
+  //           {...obj}
+  //         />
+  //       )))
+  // }
 
   const goodsRender = goods
     .filter((item) => {
@@ -65,6 +91,29 @@ const Home: React.FC<HomeProps> = ({
         {...obj}
       />
     ));
+
+  const getCircularReplacer = () => {
+    const seen = new WeakSet();
+    return (key: any, value: any) => {
+      if (typeof value === 'object' && value !== null) {
+        if (seen.has(value)) {
+          return;
+        }
+        seen.add(value);
+      }
+      return value;
+    };
+  };
+
+  useEffect(() => {
+    localStorage.setItem(
+      'filter',
+      JSON.stringify(goodsRender, getCircularReplacer())
+    );
+  }, [goodsRender]);
+
+  // const [filter, setFilter] = useState(getDataStorage);
+  // const getDataStorage = () => localStorage.getItem('filter') || [];
 
   return (
     <div className="container">
